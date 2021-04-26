@@ -17,6 +17,7 @@ def solution2(list):
             result = list[num]
     return result
 
+
 # min 은 부호만 바꾸면 됨
 
 print('=>',solution(list))
