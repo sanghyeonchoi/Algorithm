@@ -1,4 +1,3 @@
-import math
 
 while True:
     x = list(map(int, input().split()))
