@@ -13,17 +13,16 @@
 #             sys.exit(0)
 
 import sys
-
 n = 9
-a = [int(input()) for _ in range(n)]
-tatal = sum(a)
+s = [int(input()) for _ in range(n)]
+total = sum(s)
+s.sort()
 
-a.sort()
-for i in range(0, n):
-    for j in range(i+1 ,n):
-        if total - a[i] -a[j] ==100:
-            for k in range(0, n):
+for i in range(n):
+    for j in range(i+1,n):
+        if total - s[i] -s[j] == 100:
+            for k in range(n):
                 if i == k or j == k:
                     continue
-                print(a[k])
+                print(s[k])
             sys.exit(0)
